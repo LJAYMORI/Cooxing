@@ -12,6 +12,9 @@
 bin/
 gen/
 
+
+
+
 # Gradle files
 .gradle/
 build/
@@ -25,3 +28,9 @@ proguard/
 
 # Log Files
 *.log
+
+
+# Added paths and files
+auth/
+*.jpg
+*.png
