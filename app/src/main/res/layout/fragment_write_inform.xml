@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_recipe_name_write_page_inform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/write_page_inform_right_left_margin"
+            android:layout_marginRight="@dimen/write_page_inform_right_left_margin"
+            android:layout_marginTop="@dimen/write_page_inform_recipe_title_margin_top"
+            android:layout_marginBottom="@dimen/write_page_inform_recipe_title_margin_bottom"
+            android:text="@string/write_page_inform_recipe_name"
+            android:textSize="17sp"
+            android:textColor="#535353"/>
+
+        <EditText
+            android:id="@+id/edit_recipe_name_write_page_inform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/write_page_inform_recipe_title_padding_left"
+            android:paddingRight="@dimen/write_page_inform_recipe_title_padding_left"
+            android:paddingTop="@dimen/write_page_inform_recipe_title_padding_top"
+            android:paddingBottom="@dimen/write_page_inform_recipe_title_padding_bottom"
+            android:gravity="top"
+            android:hint="@string/write_page_recipe_name_hint"
+            android:textSize="15sp"
+            android:textColorHint="#888888"
+            android:background="#fff"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shadow_write"/>
+
+
+        <TextView
+            android:id="@+id/text_recipe_desc_write_page_inform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/write_page_inform_right_left_margin"
+            android:layout_marginRight="@dimen/write_page_inform_right_left_margin"
+            android:layout_marginTop="@dimen/write_page_inform_recipe_title_margin_top"
+            android:layout_marginBottom="@dimen/write_page_inform_recipe_title_margin_bottom"
+            android:text="@string/write_page_inform_recipe_desc"
+            android:textSize="17sp"
+            android:textColor="#535353" />
+
+        <EditText
+            android:id="@+id/edit_recipe_desc_write_page_inform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/write_page_recipe_desc_hint"
+            android:textSize="15sp"
+            android:textColorHint="#888888"
+            android:paddingLeft="@dimen/write_page_inform_recipe_title_padding_left"
+            android:paddingRight="@dimen/write_page_inform_recipe_title_padding_left"
+            android:paddingTop="@dimen/write_page_inform_recipe_title_padding_top"
+            android:paddingBottom="@dimen/write_page_inform_recipe_title_padding_bottom"
+            android:background="#fff"
+            android:minLines="7"
+            android:maxLines="7"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shadow_write"/>
+
+    </LinearLayout>
+
+</ScrollView>

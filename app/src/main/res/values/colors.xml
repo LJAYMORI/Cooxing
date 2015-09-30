@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ActionBar -->
+    <color name="cooxing_actionbar_color">#fb6138</color>
+    <color name="cooxing_actionbar_text_color">#ff6400</color>
+
+    <!-- EditText Cursor -->
+    <color name="cyan_500">#ff6400</color>
+
+    <!-- Navigation menu selected -->
+    <color name="navi_selected">#f5f5f5</color>
+    <color name="navi_unselected">#0fff</color>
+    <color name="navi_selected_text">#fb6138</color>
+    <color name="navi_unselected_text">#a7a7a7</color>
+
+    <!-- Tab selected -->
+    <color name="tab_selected_text">#ffffff</color>
+    <color name="tab_unselected_text">#fb6138</color>
+
+    <!-- Setting Colors -->
+    <color name="setting_index_background">#ffefeb</color>
+    <color name="setting_item_background">#ffffff</color>
+    <color name="setting_index_text_color">#c4a097</color>
+    <color name="setting_item_text_color">#716e5e</color>
+
+    <!-- Cooxing Colors -->
+    <color name="cooxing_main_color">#fb6138</color>
+    <color name="button_activated_color">#fb6138</color>
+    <color name="button_unactivated_color">#d2d2d3</color>
+
+
+
+    <!-- Write Activity Colors -->
+    <color name="write_tab_strip_color">#fff</color>
+
+</resources>

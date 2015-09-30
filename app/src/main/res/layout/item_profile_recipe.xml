@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_recipe_profile"
+    android:layout_width="@dimen/profile_item_recipe"
+    android:layout_height="@dimen/profile_item_recipe"
+    android:layout_margin="1dp">
+
+    <ImageView
+        android:id="@+id/image_recipe_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/shadow_grid_recipe"
+        android:layout_gravity="bottom"/>
+
+    <TextView
+        android:id="@+id/text_recipe_name_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:text="RECIPE_NAME"
+        android:textColor="#fafafa"
+        android:textSize="15sp" />
+</FrameLayout>

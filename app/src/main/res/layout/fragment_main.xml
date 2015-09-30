@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/pullToRefresh_main"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/cooxing_main_color"
+
+         cube_ptr:ptr_duration_to_close="300"
+         cube_ptr:ptr_duration_to_close_header="2000"
+         cube_ptr:ptr_keep_header_when_refresh="true"
+         cube_ptr:ptr_pull_to_fresh="false"
+         cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+         cube_ptr:ptr_resistance="1.7">-->
+
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/refreshLayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e5e5e5" />
+
+    </com.yalantis.phoenix.PullToRefreshView>
+
+    <!--</in.srain.cube.views.ptr.PtrClassicFrameLayout>-->
+
+    <FrameLayout
+        android:id="@+id/view_write_recipe_main"
+        android:layout_width="@dimen/main_write_width_height"
+        android:layout_height="@dimen/main_write_width_height"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/main_write_bottom_margin"
+        android:layout_marginRight="@dimen/main_write_right_margin"
+        android:background="@drawable/main_write_circle">
+
+        <TextView
+            android:layout_width="@dimen/main_write_pencil_width_height"
+            android:layout_height="@dimen/main_write_pencil_width_height"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_pencil" />
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/write_album_folder_item_left_right_margin"
+    android:layout_marginRight="@dimen/write_album_folder_item_left_right_margin"
+    android:layout_marginTop="@dimen/write_album_folder_item_top_bottom_margin"
+    android:layout_marginBottom="@dimen/write_album_folder_item_top_bottom_margin"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_top_margin_album_folder_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/write_album_folder_item_all_top_bottom_margin"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/view_album_folder_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/image_thumbnail_album_folder_item"
+            android:layout_width="@dimen/write_album_folder_item_height"
+            android:layout_height="@dimen/write_album_folder_item_height"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/text_name_album_folder_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/write_album_folder_item_name_margin_left"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="#515151"
+            android:text="ALBUM_NAME" />
+
+        <TextView
+            android:layout_width="11dp"
+            android:layout_height="19dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/ic_go_album" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_bottom_margin_album_folder_write_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/write_album_folder_item_all_top_bottom_margin"
+        android:visibility="gone" />
+
+</LinearLayout>

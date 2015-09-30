@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- ActionBar theme -->
+    <style name="cooxingActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--<item name="android:actionBarSize">50dp</item>-->
+        <item name="actionBarStyle">@style/actionBarStyle</item>
+        <!--<item name="android:windowContentOverlay">@drawable/grad_shadow_filter</item>-->
+    </style>
+
+    <!-- Remove Shadow ActionBar theme -->
+    <style name="cooxingActionBarThemeRemoveShadow" parent="cooxingActionBarTheme">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- No ActionBar theme -->
+    <style name="cooxingNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <!-- -->
+    <style name="cooxingActionBarOverlayTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/actionBarStyle</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- Title ActionBar Style -->
+    <style name="actionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/cooxing_actionbar_color</item>
+        <item name="background">@color/cooxing_actionbar_color</item>
+    </style>
+
+</resources>

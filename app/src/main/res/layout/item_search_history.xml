@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_history_cover_height"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/search_history_left_margin"
+        android:layout_marginRight="@dimen/search_history_right_margin"
+        android:gravity="center_vertical|bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_search_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/search_history_left_right_padding"
+            android:paddingRight="@dimen/search_history_left_right_padding"
+            android:paddingBottom="@dimen/search_history_bottom_padding"
+            android:singleLine="true"
+            android:text="HISTORY"
+            android:textColor="#646464"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/text_remove_search_history"
+            android:layout_width="@dimen/search_history_remove_size"
+            android:layout_height="@dimen/search_history_remove_size"
+            android:background="@drawable/btn_remove_search_hisotry"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4e4"
+        android:layout_marginLeft="@dimen/search_history_left_margin"
+        android:layout_marginRight="@dimen/search_history_right_margin"/>
+
+</LinearLayout>

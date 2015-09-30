@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidImageResizer/AndroidImageResizer.iml" filepath="$PROJECT_DIR$/AndroidImageResizer/AndroidImageResizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phoenixPullToRefresh/PhoenixPullToRefresh.iml" filepath="$PROJECT_DIR$/phoenixPullToRefresh/PhoenixPullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidAysncHttpMulitPartModifyLibrary/androidAysncHttpMulitPartModifyLibrary.iml" filepath="$PROJECT_DIR$/androidAysncHttpMulitPartModifyLibrary/androidAysncHttpMulitPartModifyLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cooxing.iml" filepath="$PROJECT_DIR$/cooxing.iml" />
+    </modules>
+  </component>
+</project>

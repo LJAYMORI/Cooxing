@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ljaymori.cooxing.detail.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_tab_height"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/view_like_detail_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="@dimen/detail_like_border_width"
+                android:layout_height="@dimen/detail_like_border_height">
+
+                <TextView
+                    android:layout_width="@dimen/detail_like_reply_icon_size"
+                    android:layout_height="@dimen/detail_like_reply_icon_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_detail_like" />
+
+                <TextView
+                    android:id="@+id/text_like_count_detail_main"
+                    android:layout_width="@dimen/detail_like_reply_count_size"
+                    android:layout_height="@dimen/detail_like_reply_count_size"
+                    android:layout_gravity="bottom|left"
+                    android:background="@drawable/background_detail_count"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#f9f9f9"
+                    android:textSize="7sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/text_like_detail_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tab_like"
+                android:textColor="#616161"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_comments_detail_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="@dimen/detail_reply_border_width"
+                android:layout_height="@dimen/detail_reply_border_height">
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="@dimen/detail_like_reply_icon_size"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_detail_reply" />
+
+                <TextView
+                    android:id="@+id/text_reply_count_detail_main"
+                    android:layout_width="@dimen/detail_like_reply_count_size"
+                    android:layout_height="@dimen/detail_like_reply_count_size"
+                    android:layout_gravity="bottom|left"
+                    android:background="@drawable/background_detail_count"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#f9f9f9"
+                    android:textSize="7sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/text_reply_detail_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_tab_reply"
+                android:textColor="#616161"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_dots_cover_height"
+            android:layout_marginLeft="@dimen/detail_dots_cover_left_margin"
+            android:layout_marginRight="@dimen/detail_dots_cover_left_margin"
+            android:layout_marginTop="@dimen/detail_dots_cover_top_margin">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_dot_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:id="@+id/view_dot_detail"
+                android:layout_width="@dimen/detail_dots_cover_width"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_dots_step_detail"
+                    android:layout_width="@dimen/detail_dots_size"
+                    android:layout_height="@dimen/detail_dots_size"
+                    android:layout_marginLeft="@dimen/detail_dots_left_margin"
+                    android:background="@drawable/dot_focused_step" />
+
+                <TextView
+                    android:id="@+id/text_dots_main_detail"
+                    android:layout_width="@dimen/detail_dots_size"
+                    android:layout_height="@dimen/detail_dots_size"
+                    android:layout_marginLeft="@dimen/detail_dots_left_margin"
+                    android:background="@drawable/dot_focused_main" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

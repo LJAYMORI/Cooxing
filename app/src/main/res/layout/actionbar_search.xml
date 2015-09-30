@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="center_vertical">
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edit_search_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/search_hint"
+        android:gravity="center_vertical"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        app:met_clearButton="true"
+        app:met_underlineColor="#fff"
+        app:met_primaryColor="#fff"
+        android:textCursorDrawable="@drawable/text_cursor_white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/text_search_actionbar"
+        android:layout_toStartOf="@+id/text_search_actionbar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+        <requestFocus />
+    </com.rengwuxian.materialedittext.MaterialEditText>
+
+
+    <TextView
+        android:id="@+id/text_search_actionbar"
+        android:layout_width="@dimen/search_search_button"
+        android:layout_height="@dimen/search_search_button"
+        android:background="@drawable/menu_ic_search"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

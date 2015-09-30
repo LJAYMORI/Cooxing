@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljaymori.cooxing.tutorial.TutorialActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="@dimen/tutorial_dot"
+            android:layout_height="@dimen/tutorial_dot"
+            android:background="@drawable/selected_dot"
+            android:layout_marginRight="@dimen/tutorial_dot_margin"
+            android:id="@+id/text_dot1_tutorial" />
+
+        <TextView
+            android:layout_width="@dimen/tutorial_dot"
+            android:layout_height="@dimen/tutorial_dot"
+            android:background="@drawable/unselected_dot"
+            android:layout_marginRight="@dimen/tutorial_dot_margin"
+            android:id="@+id/text_dot2_tutorial" />
+
+        <TextView
+            android:layout_width="@dimen/tutorial_dot"
+            android:layout_height="@dimen/tutorial_dot"
+            android:background="@drawable/unselected_dot"
+            android:layout_marginRight="@dimen/tutorial_dot_margin"
+            android:id="@+id/text_dot3_tutorial" />
+
+        <TextView
+            android:layout_width="@dimen/tutorial_dot"
+            android:layout_height="@dimen/tutorial_dot"
+            android:background="@drawable/unselected_dot"
+            android:layout_marginRight="@dimen/tutorial_dot_margin"
+            android:id="@+id/text_dot4_tutorial" />
+
+        <TextView
+            android:layout_width="@dimen/tutorial_dot"
+            android:layout_height="@dimen/tutorial_dot"
+            android:background="@drawable/unselected_dot"
+            android:layout_marginRight="@dimen/tutorial_dot_margin"
+            android:id="@+id/text_dot5_tutorial" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/write_page_description_option_height"
+    android:weightSum="2">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/text_remove_all_description_option_write_item"
+            android:layout_width="@dimen/write_page_description_option_icon_width"
+            android:layout_height="@dimen/write_page_description_option_icon_height"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="@dimen/write_page_description_option_icon_margin"
+            android:background="@drawable/btn_unactivated_remove_all" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/text_edit_order_description_option_write_item"
+            android:layout_width="@dimen/write_page_description_option_icon_width"
+            android:layout_height="@dimen/write_page_description_option_icon_height"
+            android:background="@drawable/btn_unactivated_shuffle"
+            android:layout_marginLeft="@dimen/write_page_description_option_icon_margin"
+            android:layout_gravity="center|left"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ljaymori.cooxing.userlist.UserListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_list_tab_cover_height"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_tab_following_user_list"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/user_list_tab_height"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/user_list_tab_left_right_margin"
+            android:background="@drawable/background_unfocused_tab_following_user_list"
+            android:gravity="center"
+            android:text="@string/following"
+            android:textColor="@color/navi_selected_text"/>
+
+        <TextView
+            android:id="@+id/text_tab_follower_user_list"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/user_list_tab_height"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/user_list_tab_left_right_margin"
+            android:background="@drawable/background_unfocused_tab_follower_user_list"
+            android:gravity="center"
+            android:text="@string/follower"
+            android:textColor="@color/navi_selected_text"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_item_write_page_ingredient"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/write_page_ingredient_item_height"
+    android:layout_marginBottom="1dp"
+    android:background="#fafafa"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_item_name_write_page_ingredient"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/write_page_ingredient_cover_padding_left"
+        android:singleLine="true"
+        android:text="INGREDIENT"
+        android:textColor="#191919"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/text_item_remove_write_page_ingredient"
+        android:layout_width="@dimen/write_page_ingredient_cover_add_size"
+        android:layout_height="@dimen/write_page_ingredient_cover_add_size"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/write_page_ingredient_cover_add_margin_right"
+        android:background="@drawable/btn_remove" />
+
+</LinearLayout>

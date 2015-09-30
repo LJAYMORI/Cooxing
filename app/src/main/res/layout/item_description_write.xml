@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_description_write"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/image_description_write_item"
+            android:layout_width="@dimen/write_page_description_image_cover_size"
+            android:layout_height="@dimen/write_page_description_image_cover_size"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/edit_description_write_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+                android:gravity="top"
+                android:hint="@string/write_page_desc_hint"
+                android:paddingBottom="@dimen/write_page_description_option_edit_text_padding_top"
+                android:paddingLeft="@dimen/write_page_description_option_edit_text_padding_left"
+                android:paddingRight="@dimen/write_page_description_option_edit_text_padding_left"
+                android:paddingTop="@dimen/write_page_description_option_edit_text_padding_top"
+                android:textColorHint="#9d9d9d"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/text_remove_description_write_item"
+                android:layout_width="32dp"
+                android:layout_height="41dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_remove_description"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_blur_description_write_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dbdbdb"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="@dimen/write_page_description_image_cover_size"
+            android:layout_height="@dimen/write_page_description_image_cover_size">
+
+            <ImageView
+                android:layout_width="@dimen/write_page_description_image_size"
+                android:layout_height="@dimen/write_page_description_image_size"
+                android:layout_gravity="center"
+                android:src="@drawable/background_default_add_description" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e5e4e4"
+            android:paddingLeft="@dimen/write_page_description_option_edit_text_padding_left"
+            android:paddingTop="@dimen/write_page_description_option_edit_text_padding_top"
+            android:text="@string/write_page_desc_add"
+            android:textColor="#9d9d9d" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

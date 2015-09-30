@@ -1,0 +1,2 @@
+include ':app', ':AndroidImageResizer', ':PhoenixPullToRefresh'
+include ':androidAysncHttpMulitPartModifyLibrary'

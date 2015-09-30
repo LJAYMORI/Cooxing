@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljaymori.cooxing.write.camera.WriteCameraActivity">
+
+    <com.ljaymori.cooxing.write.camera.SquareCameraPreview
+        android:id="@+id/surfaceView_write_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-60dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_write_camera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/write_camera_taken_list_height"
+        android:layout_above="@+id/view_take_picture_write_camera"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#454545"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/write_camera_item_left_right_margin" />
+
+    <TextView
+        android:id="@+id/text_change_angle_write_camera"
+        android:layout_width="@dimen/write_camera_flash_icon_size"
+        android:layout_height="@dimen/write_camera_flash_icon_size"
+        android:layout_above="@+id/recyclerView_write_camera"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="@dimen/write_camera_flash_bottom_margin"
+        android:layout_marginLeft="@dimen/write_camera_flash_left_right_margin"
+        android:background="@drawable/ic_change_camera" />
+
+    <TextView
+        android:id="@+id/text_flash_mode_write_camera"
+        android:layout_width="@dimen/write_camera_flash_icon_size"
+        android:layout_height="@dimen/write_camera_flash_icon_size"
+        android:layout_above="@+id/recyclerView_write_camera"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/write_camera_flash_bottom_margin"
+        android:layout_marginRight="@dimen/write_camera_flash_left_right_margin"
+        android:background="@drawable/ic_flash_auto" />
+
+    <LinearLayout
+        android:id="@+id/view_take_picture_write_camera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/write_camera_take_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/selector_write_background_take_picture"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="@dimen/write_camera_button_width"
+            android:layout_height="@dimen/write_camera_button_height"
+            android:background="@drawable/ic_take_picture" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/view_loading_write_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/recyclerView_write_camera"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#7000"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+</RelativeLayout>

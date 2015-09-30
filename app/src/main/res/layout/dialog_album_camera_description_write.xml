@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/write_dialog_height"
+        android:background="@drawable/background_album_camera"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_notice_dialog_album_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/write_dialog_description_alert_top_bottom_margin"
+            android:layout_marginTop="@dimen/write_dialog_description_alert_top_bottom_margin"
+            android:text="@string/write_dialog_alert_message"
+            android:textColor="@color/cooxing_main_color"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/write_dialog_description_icon_top_bottom_margin"
+            android:layout_marginTop="@dimen/write_dialog_description_icon_top_bottom_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/view_album_description_write_dialog"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/write_dialog_description_icon_cover_height"
+                android:layout_marginLeft="@dimen/write_dialog_description_icon_left_right_margin"
+                android:layout_marginRight="@dimen/write_dialog_description_icon_left_right_margin"
+                android:layout_weight="1"
+                android:background="@drawable/background_album_camera_item"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/write_dialog_description_icon_size"
+                    android:layout_height="@dimen/write_dialog_description_icon_size"
+                    android:background="@drawable/ic_album" />
+
+                <TextView
+                    android:id="@+id/text_album_dialog_album_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/write_dialog_from_album"
+                    android:textColor="#f7f7f7"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_camera_description_write_dialog"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/write_dialog_description_icon_cover_height"
+                android:layout_marginLeft="@dimen/write_dialog_description_icon_left_right_margin"
+                android:layout_marginRight="@dimen/write_dialog_description_icon_left_right_margin"
+                android:layout_weight="1"
+                android:background="@drawable/background_album_camera_item"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/write_dialog_description_icon_album_width"
+                    android:layout_height="@dimen/write_dialog_description_icon_size"
+                    android:background="@drawable/ic_camera" />
+
+                <TextView
+                    android:id="@+id/text_camera_dialog_album_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/write_dialog_take_picture"
+                    android:textColor="#f7f7f7"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

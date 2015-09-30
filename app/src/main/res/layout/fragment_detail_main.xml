@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView_detail_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0e0e0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_main_image_cover_height"
+                android:background="#e0e0e0">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detail_main_image_shadow"
+                    android:background="@drawable/shadow_detail">
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/image_detail_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detail_main_image_height"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_placeholder" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="@dimen/detail_main_user_cover_bottom_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/detail_main_user_nickname_height"
+                        android:layout_gravity="right"
+                        android:background="@drawable/background_ribbon_short"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="@dimen/detail_main_user_picture_right_margin"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_nickname_detail_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/detail_main_user_nickname_height"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="NICKNAME"
+                            android:background="@drawable/background_nickname_ribbon"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+
+
+                        <com.ljaymori.cooxing.common.MLRoundedImageView
+                            android:id="@+id/image_user_detail_main"
+                            android:layout_width="@dimen/detail_main_user_picture_size"
+                            android:layout_height="@dimen/detail_main_user_picture_size"
+                            android:src="@mipmap/ic_launcher" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/detail_main_intro_top_padding"
+                android:paddingLeft="@dimen/detail_main_intro_left_padding"
+                android:paddingRight="@dimen/detail_main_intro_left_padding"
+                android:paddingTop="@dimen/detail_main_intro_top_padding">
+
+                <TextView
+                    android:id="@+id/text_recipe_name_detail_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECIPE_NAME"
+                    android:textColor="#343434"
+                    android:textColorLink="@color/cooxing_main_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_recipe_date_detail_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="RECIPE_DATE"
+                    android:textColor="#969595"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_recipe_description_detail_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="RECIPE_INTORDUCE"
+                    android:textColorLink="@color/cooxing_main_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/detail_main_ingredient_bottom_margin"
+                android:layout_marginTop="@dimen/detail_main_ingredient_top_margin"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/detail_main_ingredient_bottom_padding"
+                android:paddingLeft="@dimen/detail_main_ingredient_left_padding"
+                android:paddingRight="@dimen/detail_main_ingredient_right_padding"
+                android:paddingTop="@dimen/detail_main_ingredient_top_padding">
+
+                <TextView
+                    android:id="@+id/text_ingredient_detail_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingredient"
+                    android:textColor="#343434"
+                    android:textSize="17sp" />
+
+                <com.ljaymori.cooxing.detail.ExpandableHeightGridView
+                    android:id="@+id/gridView_ingredient_detail_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:isScrollContainer="false"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>

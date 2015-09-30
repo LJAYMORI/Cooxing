@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">쿡싱</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="one_more_back_key">뒤로 버튼을 한번 더 누르시면 앱이 종료됩니다.</string>
+
+    <!-- Common -->
+    <string name="cooxing">cooxing</string>
+    <string name="login">로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="complete">완료</string>
+    <string name="submit">전송</string>
+    <string name="ingredient">재료</string>
+    <string name="post">게시</string>
+    <string name="following">팔로잉</string>
+    <string name="follower">팔로워</string>
+
+
+    <!-- Login -->
+    <string name="login_id_hint">ID(이메일)을 입력하세요.</string>
+    <string name="login_pw_hint">비밀번호를 입력하세요.</string>
+    <string name="login_find_password">비밀번호를 잊으셨나요?</string>
+    <string name="login_kakao">카카오톡으로\n로그인</string>
+    <string name="login_facebook">페이스북으로\n로그인</string>
+    <string name="login_signup">회원가입하기</string>
+
+    <!-- Signup -->
+    <string name="signup_id_hint">ID(이메일)</string>
+    <string name="signup_password_hint">비밀번호(6자 이상)</string>
+    <string name="signup_password_check_hint">비밀번호 재확인</string>
+    <string name="signup_nickname_hint">닉네임(2자 이상)</string>
+    <string name="signup_clause_policy">이용약관과 개인보호 정책에 동의합니다.</string>
+    <string name="signup_submit">가입하기</string>
+
+    <!-- Clause -->
+    <string name="clause_check_use_agree">이용약관에 동의합니다.</string>
+    <string name="clause_check_personal_information">개인보호 정책에 동의합니다.</string>
+    <string name="clause_service_clause">서비스 이용약관</string>
+    <string name="clause_personal_information_policy">개인정보 보호정책</string>
+
+    <!-- Interest -->
+    <string name="interest_notice">좋아하는 재료를 5개 이상 선택해주세요!\n좋아하는 재료가 포함된 요리를 필터링해 보실 수 있습니다.</string>
+    <string name="interest_basic_ingredient">기본 관심재료</string>
+    <string name="interest_popular_ingredient">인기 관심재료</string>
+    <string name="interest_message_minimum_five">좋아하는 재료를 5개 이상 선택해주세요!</string>
+
+    <!-- Tutorial -->
+    <string name="tuto_title_one">TITLE 1</string>
+    <string name="tuto_title_two">TITLE 2</string>
+    <string name="tuto_title_three">TITLE 3</string>
+    <string name="tuto_title_four">TITLE 4</string>
+    <string name="tuto_title_five">TITLE 5</string>
+    <string name="tuto_desc_one">DESC 1</string>
+    <string name="tuto_desc_two">DESC 2</string>
+    <string name="tuto_desc_three">DESC 3</string>
+    <string name="tuto_desc_four">DESC 4</string>
+    <string name="tuto_desc_five">DESC 5</string>
+    <string name="tuto_start_app">쿡싱 시작하기</string>
+
+    <!-- Main -->
+    <string name="main_recipe_hide_dialog_item">이 레시피 보지 않기</string>
+    <string name="main_recipe_share_dialog_item">공유하기</string>
+
+    <!-- Navi -->
+    <string name="navi_interest_recipe">쿡리스트</string>
+    <string name="navi_main">요리보기</string>
+    <string name="navi_write">레시피 작성</string>
+    <string name="navi_notify">알림</string>
+    <string name="navi_user_nickname">로그인 해주세요</string>
+    <string name="navi_like_food_type">식성을 알려드려요!</string>
+
+    <!-- Like -->
+    <string name="like_no_recipe">좋아요한 레시피가 아직 없어요.</string>
+
+    <!-- Menu -->
+    <string name="menu_share">공유</string>
+    <string name="menu_search">검색</string>
+    <string name="menu_recent">최신순</string>
+    <string name="menu_populate">인기순</string>
+    <string name="menu_interest_recipe">관심재료 요리</string>
+
+    <!-- Search -->
+    <string name="search_user">사용자</string>
+    <string name="search_recipe">요리</string>
+    <string name="search_hint">검색어를 입력하세요.</string>
+
+    <string name="search_message_no_result">검색 결과가 없어요.</string>
+    <string name="search_message_keyword_length">검색어를 2자이상 입력해주세요.</string>
+
+    <!-- Reply -->
+    <string name="reply_actionbar_title">전체 댓글</string>
+    <string name="reply_delete_item">· 삭제하기</string>
+
+    <string name="reply_message_no_extra">Recipe transfer error</string>
+
+    <!-- Profile -->
+    <string name="profile_title">님의 프로필</string>
+    <string name="profile_following">팔로잉</string>
+    <string name="profile_follower">팔로워</string>
+    <string name="profile_wrote_recipe">작성한 레시피</string>
+    <string name="profile_interest_recipe">쿡 리스트</string>
+    <string name="profile_open_recipe">열어본 레시피</string>
+    
+    <string name="profile_message_no_wrote_recipe">작성한 레시피가 아직 없어요.</string>
+    <string name="profile_message_no_bookmark_recipe">좋아요한 레시피가 아직 없어요.</string>
+    <string name="profile_message_no_opened_recipe">열어본 레시피가 아직 없어요.</string>
+
+    <string name="profile_message_invalid_file_path">실패 : 이미지 경로가 올바르지 않습니다.</string>
+    <string name="profile_message_not_found_file_path">실패 : 이미지를 찾을 수 없습니다.</string>
+
+    <string name="profile_message_no_extra">user _id transfer error</string>
+
+    <!-- User List -->
+    <string name="user_list_title_following_list">팔로잉 리스트</string>
+    <string name="user_list_title_follower_list">팔로워 리스트</string>
+    <string name="user_list_no_extra">Extras transfer error</string>
+
+    <!-- Detail -->
+    <string name="detail_tab_like">좋아요</string>
+    <string name="detail_tab_reply">댓글</string>
+
+    <string name="detail_message_no_extra">Recipe transfer error</string>
+
+    <!-- Write -->
+    <string name="write_actionbar_title">레시피 작성</string>
+    <string name="write_tab_recipe_inform">요리정보</string>
+    <string name="write_tab_ingredient">재료</string>
+    <string name="write_tab_description">사진 및 설명</string>
+    <string name="write_page_inform_recipe_name">요리제목</string>
+    <string name="write_page_inform_recipe_desc">요리설명</string>
+    <string name="write_page_recipe_name_hint">이 요리의 이름은 무엇인가요?</string>
+    <string name="write_page_recipe_desc_hint">어떤 요리인지 간단히 설명해주세요 :)</string>
+    <string name="write_page_desc_hint">각 단계별 설명을 입력해주세요.</string>
+    <string name="write_page_desc_add">탭하여 사진을 등록하세요</string>
+    <string name="write_page_add_ingredient">재료 추가</string>
+    <string name="write_dialog_from_album">앨범에서 찾기</string>
+    <string name="write_dialog_take_picture">촬영하기</string>
+    <string name="write_dialog_alert_message">사진을 먼저 추가해 주세요.</string>
+    <string name="write_album_folder_notice">업로드 할 사진이 있는 폴더를 선택하세요.</string>
+    <string name="write_album_folder_all_list">전체 보기</string>
+    <string name="write_image_notice">요리 순서대로 10개 이내의 사진을\n선택해 주세요.</string>
+    <string name="write_image_complete">선택완료</string>
+
+    <string name="write_description_dialog_title">알림</string>
+    <string name="write_description_dialog_message">리스트를 전부 삭제하시겠습니까?</string>
+
+    <string name="write_camera_dialog_title">알림</string>
+    <string name="write_camera_dialog_message">확인을 누르시면 촬영된 사진이 삭제됩니다.</string>
+
+    <string name="write_message_add_menu_limit">메뉴 추가는 최대 20개 입니다.</string>
+    <string name="write_message_add_menu_hashtag">메뉴추가시 자동으로 해시태그로 바꿔드려요.</string>
+    <string name="write_message_add_image_limit">사진은 최대 10개를 넘을 수 없습니다.</string>
+    <string name="write_message_insufficient_file_path">추가된 사진이 없습니다.</string>
+    <string name="write_message_network_transfer">전송 실패</string>
+    <string name="write_message_post_success">게시 완료!</string>
+
+
+    <!-- Setting -->
+    <string name="setting_index_my_profile">내 정보</string>
+    <string name="setting_menu_profile">프로필 설정</string>
+    <string name="setting_menu_ingredient">관심재료 설정</string>
+
+    <string name="setting_index_app">앱 설정</string>
+    <string name="setting_menu_alarm">알림 설정</string>
+
+    <string name="setting_index_account">계정</string>
+    <string name="setting_menu_edit_password">비밀번호 변경</string>
+    <string name="setting_menu_withdraw">회원 탈퇴</string>
+
+
+    <string name="setting_index_about">About</string>
+    <string name="setting_menu_notice">공지사항</string>
+    <string name="setting_menu_qna">Q&amp;A</string>
+    <string name="setting_menu_open_source">오픈소스 라이센스</string>
+    <string name="setting_menu_clause">서비스 이용약관</string>
+    <string name="setting_menu_policy">개인정보 보호정책</string>
+    
+    <string name="setting_index_etc">기타</string>
+    <string name="setting_menu_producer">쿡싱을 만든 사람들</string>
+
+
+    <!-- ETC -->
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">요리 보기</string>
+    <string name="title_activity_notify">알림 보기</string>
+    <string name="title_activity_interest">쿡 리스트</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_write">WriteActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_write_camera">사진 촬영</string>
+    <string name="title_activity_write_album">사진 선택</string>
+    <string name="title_activity_write_image">WriteImageActivity</string>
+    <string name="title_activity_user_list">UserListActivity</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_clause_signup">ClauseSignupActivity</string>
+    <string name="title_activity_setting">환경설정</string>
+
+
+</resources>

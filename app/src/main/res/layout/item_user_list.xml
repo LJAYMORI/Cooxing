@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/user_list_item_height"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ljaymori.cooxing.common.MLRoundedImageView
+            android:id="@+id/image_user_list"
+            android:layout_width="@dimen/user_list_item_profile_size"
+            android:layout_height="@dimen/user_list_item_profile_size"
+            android:layout_marginLeft="@dimen/user_list_item_picture_left_margin"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/user_list_item_nickname_left_margin"
+            android:layout_marginRight="@dimen/user_list_item_nickname_right_margin"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_nickname_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="NICKNAME"
+                android:textColor="#353535"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_follow_unfollow_user_list"
+            android:layout_width="@dimen/user_list_item_follow_size"
+            android:layout_height="@dimen/user_list_item_follow_size"
+            android:layout_marginRight="@dimen/user_list_item_follow_right_margin"
+            android:background="@drawable/btn_follow" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/user_list_divider_left_margin"
+        android:layout_marginRight="@dimen/user_list_divider_right_margin"
+        android:background="#e4e4e4" />
+
+</LinearLayout>

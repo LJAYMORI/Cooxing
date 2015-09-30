@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView_detail_step"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_main_detail_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detail_main_image_height"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/detail_step_stopwatch_window_left_right_margin"
+                            android:layout_marginRight="@dimen/detail_step_stopwatch_window_left_right_margin"
+                            android:layout_marginBottom="@dimen/detail_step_stopwatch_window_bottom_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_stopwatch_detail_step"
+                                android:layout_width="@dimen/detail_step_stopwatch_window_size"
+                                android:layout_height="@dimen/detail_step_stopwatch_window_size"
+                                android:layout_marginTop="@dimen/detail_step_stopwatch_window_top_margin"
+                                android:background="@drawable/ic_unfocused_stopwatch" />
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/dashline_detail_step"
+                                    android:layout_gravity="center_horizontal"/>
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/text_window_detail_step"
+                                android:layout_width="@dimen/detail_step_stopwatch_window_size"
+                                android:layout_height="@dimen/detail_step_stopwatch_window_size"
+                                android:layout_marginTop="@dimen/detail_step_stopwatch_window_top_margin"
+                                android:background="@drawable/ic_unfocused_window" />
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/text_step_intro_detail_step"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="40dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginLeft="@dimen/detail_step_stopwatch_window_left_right_margin"
+                                android:layout_marginRight="@dimen/detail_step_stopwatch_window_left_right_margin"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColorLink="@color/cooxing_main_color"
+                                android:text="STEP_INTRODUCE\nSTEP_INTRODUCE"
+                                android:lineSpacingExtra="6dp"
+                                android:textSize="13sp"
+                                android:textColor="#6a6a6a"/>
+
+                            <TextView
+                                android:id="@+id/text_cover_step_intro_detail_step"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="40dp"
+                                android:visibility="gone"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="@dimen/detail_step_icon_cover_size"
+                        android:layout_height="@dimen/detail_step_icon_cover_size"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/background_step_detail"
+                        android:layout_marginTop="49dp">
+
+                        <TextView
+                            android:id="@+id/text_position_detail_step"
+                            android:layout_width="@dimen/detail_step_icon_size"
+                            android:layout_height="@dimen/detail_step_icon_size"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:layout_marginBottom="@dimen/detail_step_icon_bottom_margin"
+                            android:background="@drawable/ic_step_1"/>
+
+                    </FrameLayout>
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>

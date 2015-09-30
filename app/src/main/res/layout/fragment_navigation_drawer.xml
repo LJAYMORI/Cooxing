@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout_navi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.ljaymori.cooxing.splash.SplashActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_user_profile_cover_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fde7e1"
+            android:orientation="horizontal">
+
+
+            <com.ljaymori.cooxing.common.MLRoundedImageView
+                android:id="@+id/image_profile_navi"
+                android:layout_width="@dimen/navi_user_profile_size"
+                android:layout_height="@dimen/navi_user_profile_size"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/navi_user_profile_left_margin"
+                android:layout_marginRight="@dimen/navi_user_profile_right_margin"
+                android:src="@drawable/default_profile" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_nickname_navi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/navi_user_nickname"
+                    android:textSize="16sp"
+                    android:textColor="#191919"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_interest_fish"/>
+
+                    <TextView
+                        android:id="@+id/text_intro_navi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="@string/navi_like_food_type"
+                        android:textSize="11sp"
+                        android:textColor="#6b6b6c"
+                        android:lineSpacingExtra="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_setting_navi"
+                android:layout_width="@dimen/navi_icon_profile_setting"
+                android:layout_height="@dimen/navi_icon_profile_setting"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="@dimen/navi_icon_setting_right_margin"
+                android:layout_marginTop="@dimen/navi_icon_setting_top_margin"
+                android:background="@drawable/selector_ic_setting_navi_menu" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_interest_alert_cover_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/view_interest_navi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/selector_background_navi_menu"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_interest_icon_navi"
+                android:layout_width="@dimen/navi_icon_interest_notify_menu_size"
+                android:layout_height="@dimen/navi_icon_interest_notify_menu_size"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/ic_unfocused_interest" />
+
+            <TextView
+                android:id="@+id/text_interest_navi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navi_interest_recipe"
+                android:textColor="@color/navi_unselected_text"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_alarm_navi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/selector_background_navi_menu"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_alarm_icon_navi"
+                android:layout_width="@dimen/navi_icon_interest_notify_menu_size"
+                android:layout_height="@dimen/navi_icon_interest_notify_menu_size"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/ic_unfocused_alarm" />
+
+            <TextView
+                android:id="@+id/text_alarm_navi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navi_notify"
+                android:textColor="@color/navi_unselected_text"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/view_main_navi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navi_main_logout_cover_height"
+            android:background="@color/navi_selected"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_main_icon_navi"
+                android:layout_width="@dimen/navi_icon_main_logout_menu_size"
+                android:layout_height="@dimen/navi_icon_main_logout_menu_size"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_focused_main_recipes" />
+
+            <TextView
+                android:id="@+id/text_main_navi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/navi_main"
+                android:textColor="@color/navi_selected_text"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_main_logout_cover_height"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/view_logout_navi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/selector_background_navi_menu"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_logout_icon_navi"
+                android:layout_width="@dimen/navi_icon_main_logout_menu_size"
+                android:layout_height="@dimen/navi_icon_main_logout_menu_size"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_unfocused_logout" />
+
+            <TextView
+                android:id="@+id/text_logout_navi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/logout"
+                android:textSize="15sp"
+                android:textColor="@color/navi_unselected_text"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

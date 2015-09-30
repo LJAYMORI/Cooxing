@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/write_page_ingredient_cover_height"
+        android:background="#fafafa">
+
+        <EditText
+            android:id="@+id/edit_write_page_ingredient"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/write_page_ingredient_cover_padding_left"
+            android:background="@null"
+            android:hint="@string/write_page_add_ingredient"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColorHint="#818181"
+            android:textColor="#191919"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/text_add_write_page_ingredient"
+            android:layout_width="@dimen/write_page_ingredient_cover_add_size"
+            android:layout_height="@dimen/write_page_ingredient_cover_add_size"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/write_page_ingredient_cover_add_margin_right"
+            android:background="@drawable/btn_plus" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shadow_write" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_write_page_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/view_tutorial_write_page_ingredient"
+            android:layout_width="@dimen/write_page_ingredient_tutorial_cover_width"
+            android:layout_height="@dimen/write_page_ingredient_tutorial_cover_height"
+            android:background="@drawable/background_write_ingredient_tutorial"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/write_page_ingredient_tutorial_margin_top">
+
+            <ImageView
+                android:layout_width="@dimen/write_page_ingredient_tutorial_item_width"
+                android:layout_height="@dimen/write_page_ingredient_tutorial_item_height"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/background_ingredient_tutorial" />
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

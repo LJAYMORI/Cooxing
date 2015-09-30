@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.ljaymori.cooxing.profile.ProfileActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/tab_profile"
+        layout="@layout/item_tab_profile" />
+
+    <FrameLayout
+        android:id="@+id/view_write_recipe_profile"
+        android:layout_width="@dimen/main_write_width_height"
+        android:layout_height="@dimen/main_write_width_height"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/main_write_bottom_margin"
+        android:layout_marginRight="@dimen/main_write_right_margin"
+        android:background="@drawable/main_write_circle">
+
+        <TextView
+            android:layout_width="@dimen/main_write_pencil_width_height"
+            android:layout_height="@dimen/main_write_pencil_width_height"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_pencil" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

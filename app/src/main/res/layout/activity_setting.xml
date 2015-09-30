@@ -1,0 +1,439 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljaymori.cooxing.setting.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_index_profile_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_index_height"
+            android:background="@color/setting_index_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/setting_index_left_padding"
+            android:text="@string/setting_index_my_profile"
+            android:textColor="@color/setting_index_text_color"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/view_my_profile_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_menu_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_menu_my_profile_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/setting_menu_left_padding"
+                    android:text="@string/setting_menu_profile"
+                    android:textSize="20sp"
+                    android:textColor="@color/setting_item_text_color"/>
+
+                <TextView
+                    android:layout_width="@dimen/setting_menu_arrow_size"
+                    android:layout_height="@dimen/setting_menu_arrow_size"
+                    android:background="@drawable/ic_arrow_setting"
+                    android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/setting_index_background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_ingredient_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_ingredient_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_ingredient"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+
+
+        <TextView
+            android:id="@+id/text_index_app_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_index_height"
+            android:background="@color/setting_index_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/setting_index_left_padding"
+            android:text="@string/setting_index_app"
+            android:textColor="@color/setting_index_text_color"
+            android:textSize="20sp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/view_alarm_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_alarm_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_alarm"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+
+
+        <TextView
+            android:id="@+id/text_index_account_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_index_height"
+            android:background="@color/setting_index_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/setting_index_left_padding"
+            android:text="@string/setting_index_account"
+            android:textColor="@color/setting_index_text_color"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/view_edit_password_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_password_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_edit_password"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+        <LinearLayout
+            android:id="@+id/view_withdraw_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_withdraw_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_withdraw"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+
+        <TextView
+            android:id="@+id/text_index_about_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_index_height"
+            android:background="@color/setting_index_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/setting_index_left_padding"
+            android:text="@string/setting_index_about"
+            android:textColor="@color/setting_index_text_color"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/view_notice_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_notice_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_notice"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+        <LinearLayout
+            android:id="@+id/view_qna_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_qna_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_qna"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+        <LinearLayout
+            android:id="@+id/view_open_source_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_open_source_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_open_source"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+        <LinearLayout
+            android:id="@+id/view_clause_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_clause_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_clause"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+
+        <LinearLayout
+            android:id="@+id/view_policy_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_policy_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_policy"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+
+        <TextView
+            android:id="@+id/text_index_etc_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_index_height"
+            android:background="@color/setting_index_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/setting_index_left_padding"
+            android:text="@string/setting_index_etc"
+            android:textColor="@color/setting_index_text_color"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:id="@+id/view_producer_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_menu_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_menu_producer_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/setting_menu_left_padding"
+                android:text="@string/setting_menu_producer"
+                android:textSize="20sp"
+                android:textColor="@color/setting_item_text_color"/>
+
+            <TextView
+                android:layout_width="@dimen/setting_menu_arrow_size"
+                android:layout_height="@dimen/setting_menu_arrow_size"
+                android:background="@drawable/ic_arrow_setting"
+                android:layout_marginRight="@dimen/setting_menu_right_margin"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/setting_index_background"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_index_height"
+            android:background="@color/setting_index_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/setting_index_left_padding"
+            android:textColor="@color/setting_index_text_color"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

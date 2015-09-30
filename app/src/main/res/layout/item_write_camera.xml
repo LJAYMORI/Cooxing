@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/write_camera_item_cover_width"
+    android:layout_height="@dimen/write_camera_item_cover_height"
+    android:layout_marginLeft="@dimen/write_camera_item_left_right_margin"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/image_picture_write_camera_item"
+        android:layout_width="@dimen/write_camera_item_image_size"
+        android:layout_height="@dimen/write_camera_item_image_size"
+        android:layout_gravity="left|bottom"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/button_del_picture_write_camera_item"
+        android:layout_width="@dimen/write_camera_item_remove_size"
+        android:layout_height="@dimen/write_camera_item_remove_size"
+        android:layout_gravity="right"
+        android:background="@drawable/ic_remove_taken_picture"/>
+</FrameLayout>

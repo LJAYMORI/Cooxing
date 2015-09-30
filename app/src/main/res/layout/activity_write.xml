@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout_write"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ljaymori.cooxing.write.WriteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/write_tab_height"
+            android:paddingLeft="@dimen/write_tab_left_right_margin"
+            android:paddingRight="@dimen/write_tab_left_right_margin"
+            android:background="@color/cooxing_main_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/view_tab_cover_write"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/text_tab_inform_write"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/write_tab_recipe_inform"
+                    android:textColor="#fff"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/text_tab_ingredient_write"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/write_tab_ingredient"
+                    android:textColor="#fff"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/text_tab_description_write"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/write_tab_description"
+                    android:textColor="#fff"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/strip_write"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/write_tab_strip_height"
+                android:background="@color/write_tab_strip_color" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shadow_write"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_write"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/view_sharp_write"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/write_tag_height"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:background="@drawable/background_hashtag"
+                android:visibility="visible"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text_sharp_write"
+                    android:layout_width="@dimen/write_tag_height"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_hashtag" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_write_sharp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

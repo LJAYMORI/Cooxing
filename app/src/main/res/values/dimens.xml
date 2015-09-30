@@ -1,0 +1,261 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">316dp</dimen>
+
+    <!-- Tutorial -->
+    <dimen name="tutorial_dot">10dp</dimen>
+    <dimen name="tutorial_dot_margin">7dp</dimen>
+    <dimen name="tutorial_symbol_width">260dp</dimen>
+    <dimen name="tutorial_symbol_height">260dp</dimen>
+
+    <!-- interest -->
+    <dimen name="interest_item_width">110dp</dimen>
+    <dimen name="interest_item_height">110dp</dimen>
+
+    <!-- Navigation -->
+    <dimen name="navi_user_profile_cover_height">146dp</dimen>
+    <dimen name="navi_interest_alert_cover_height">136dp</dimen>
+    <dimen name="navi_main_logout_cover_height">65dp</dimen>
+
+    <dimen name="navi_icon_profile_setting">25dp</dimen>
+    <dimen name="navi_icon_interest_notify_menu_size">37dp</dimen>
+    <dimen name="navi_icon_main_logout_menu_size">39dp</dimen>
+    <dimen name="navi_user_profile_size">74dp</dimen>
+    <dimen name="navi_user_profile_left_margin">21dp</dimen>
+    <dimen name="navi_user_profile_right_margin">15dp</dimen>
+    <dimen name="navi_icon_setting_right_margin">19dp</dimen>
+    <dimen name="navi_icon_setting_top_margin">21dp</dimen>
+
+    <!-- Main -->
+    <dimen name="main_item_height">450dp</dimen>
+    <dimen name="main_item_user_picture">17dp</dimen>
+    <dimen name="main_item_like_size">73dp</dimen>
+    <dimen name="main_item_like_margin_bottom">50dp</dimen>
+    <dimen name="main_item_like_margin_right">20dp</dimen>
+    <dimen name="main_item_recipe_step">140dp</dimen>
+    <dimen name="main_item_strap_width">80dp</dimen>
+    <dimen name="main_item_strap_height">61dp</dimen>
+    <dimen name="main_item_strap_right_margin">-60dp</dimen>
+    <dimen name="main_item_strap_item_width">46dp</dimen>
+    <dimen name="main_item_strap_item_height">13dp</dimen>
+    <dimen name="main_item_strap_item_top_bottom_margin">8dp</dimen>
+    <dimen name="main_item_shadow_width">27dp</dimen>
+
+    <dimen name="main_item_nickname_left_right_padding">13dp</dimen>
+    <dimen name="main_item_nickname_top_bottom_padding">8dp</dimen>
+
+    <dimen name="main_write_width_height">70dp</dimen>
+    <dimen name="main_write_pencil_width_height">42dp</dimen>
+    <dimen name="main_write_right_margin">20dp</dimen>
+    <dimen name="main_write_bottom_margin">15dp</dimen>
+
+
+    <!-- Popup Menu -->
+    <dimen name="popup_item_width">220dp</dimen>
+    <dimen name="popup_item_height">50dp</dimen>
+    <dimen name="popup_item_left_padding">20dp</dimen>
+
+    <!-- Search -->
+    <dimen name="search_tab_cover_height">56dp</dimen>
+    <dimen name="search_tab_top_bottom_margin">6dp</dimen>
+    <dimen name="search_tab_left_right_margin">8dp</dimen>
+    <dimen name="search_recipe_item">160dp</dimen>
+    <dimen name="search_recipe_item_margin">5dp</dimen>
+    <dimen name="search_user_item_height">62dp</dimen>
+    <dimen name="search_user_item_picture">51dp</dimen>
+    <dimen name="search_user_item_picture_left_margin">19dp</dimen>
+    <dimen name="search_user_item_nickname_left_margin">17dp</dimen>
+    <dimen name="search_user_item_nickname_right_margin">10dp</dimen>
+    <dimen name="search_user_item_follow">23dp</dimen>
+    <dimen name="search_user_item_follow_right_margin">37dp</dimen>
+    <dimen name="search_user_item_divider_left_margin">16dp</dimen>
+    <dimen name="search_user_item_divider_right_margin">15dp</dimen>
+    <dimen name="search_search_button">25dp</dimen>
+    <dimen name="search_history_recyclerview_height">176dp</dimen>
+    <dimen name="search_history_cover_height">44dp</dimen>
+    <dimen name="search_history_left_margin">16dp</dimen>
+    <dimen name="search_history_right_margin">15dp</dimen>
+    <dimen name="search_history_left_right_padding">6dp</dimen>
+    <dimen name="search_history_bottom_padding">4dp</dimen>
+    <dimen name="search_history_remove_size">25dp</dimen>
+
+
+    <!-- Notify -->
+    <dimen name="notify_item_height">90dp</dimen>
+    <dimen name="notify_item_left_right_margin">12dp</dimen>
+    <dimen name="notify_user_picture">60dp</dimen>
+
+    <!-- Reply -->
+    <dimen name="reply_item_height">90dp</dimen>
+    <dimen name="reply_item_left_rigth_margin">12dp</dimen>
+    <dimen name="reply_item_picture">60dp</dimen>
+
+    <!-- Profile -->
+    <dimen name="profile_item_userinfo_height">281dp</dimen>
+    <dimen name="profile_item_nickname_top_margin">29dp</dimen>
+    <dimen name="profile_item_nickname_bottom_margin">10dp</dimen>
+    <dimen name="profile_item_nickname_cover_height">38dp</dimen>
+    <dimen name="profile_item_tab_height">37dp</dimen>
+    <dimen name="profile_item_tab_top_padding">13dp</dimen>
+    <dimen name="profile_item_tab_bottom_padding">11dp</dimen>
+    <dimen name="profile_item_tab_left_right_padding">8dp</dimen>
+    <dimen name="profile_item_tab_my_width">114dp</dimen>
+    <dimen name="profile_item_tab_other_width">171dp</dimen>
+    <dimen name="profile_item_user_interest_icon_size">30dp</dimen>
+    <dimen name="profile_item_user_interest_icon_right_margin">8dp</dimen>
+    <dimen name="profile_item_setting_follow_size">42dp</dimen>
+    <dimen name="profile_item_setting_follow_right_margin">19dp</dimen>
+    <dimen name="profile_item_user_picture_cover_bottom_margin">16dp</dimen>
+    <dimen name="profile_item_user_picture_cover_size">100dp</dimen>
+    <dimen name="profile_item_user_picture_border_size">90dp</dimen>
+    <dimen name="profile_item_user_picture_size">82dp</dimen>
+    <dimen name="profile_item_user_picture_edit_size">30dp</dimen>
+
+    <dimen name="profile_item_intro_bottom_margin">16dp</dimen>
+    <dimen name="profile_item_follow_count_bottom_margin">28dp</dimen>
+    <dimen name="profile_item_following_right_margin">13dp</dimen>
+    <dimen name="profile_item_follower_left_margin">12dp</dimen>
+
+    <dimen name="profile_item_recipe">160dp</dimen>
+    <dimen name="profile_itme_tab_margin">5dp</dimen>
+
+
+    <!-- User List -->
+    <dimen name="user_list_tab_cover_height">63dp</dimen>
+    <dimen name="user_list_tab_height">45dp</dimen>
+    <dimen name="user_list_tab_left_right_margin">15dp</dimen>
+    <dimen name="user_list_item_height">62dp</dimen>
+    <dimen name="user_list_item_follow_size">23dp</dimen>
+    <dimen name="user_list_item_profile_size">51dp</dimen>
+    <dimen name="user_list_item_picture_left_margin">19dp</dimen>
+    <dimen name="user_list_item_nickname_left_margin">17dp</dimen>
+    <dimen name="user_list_item_nickname_right_margin">10dp</dimen>
+    <dimen name="user_list_item_follow_right_margin">37dp</dimen>
+    <dimen name="user_list_divider_left_margin">16dp</dimen>
+    <dimen name="user_list_divider_right_margin">15dp</dimen>
+
+
+    <!-- Detail -->
+    <dimen name="detail_tab_height">64dp</dimen>
+    <dimen name="detail_like_border_width">32dp</dimen>
+    <dimen name="detail_like_border_height">26dp</dimen>
+    <dimen name="detail_reply_border_width">35dp</dimen>
+    <dimen name="detail_reply_border_height">30dp</dimen>
+    <dimen name="detail_like_reply_icon_size">19dp</dimen>
+    <dimen name="detail_like_reply_count_size">14dp</dimen>
+    <dimen name="detail_main_image_height">320dp</dimen>
+    <dimen name="detail_main_image_cover_height">364dp</dimen>
+    <dimen name="detail_main_image_shadow">110dp</dimen>
+    <dimen name="detail_main_user_cover_width">130dp</dimen>
+    <dimen name="detail_main_user_cover_bottom_margin">11dp</dimen>
+    <dimen name="detail_main_user_picture_size">74dp</dimen>
+    <dimen name="detail_main_user_picture_right_margin">23dp</dimen>
+    <dimen name="detail_main_user_nickname_height">32dp</dimen>
+    <dimen name="detail_main_intro_top_padding">20dp</dimen>
+    <dimen name="detail_main_intro_left_padding">25dp</dimen>
+    <dimen name="detail_main_ingredient_top_margin">12dp</dimen>
+    <dimen name="detail_main_ingredient_bottom_margin">21dp</dimen>
+    <dimen name="detail_main_ingredient_top_padding">21dp</dimen>
+    <dimen name="detail_main_ingredient_bottom_padding">32dp</dimen>
+    <dimen name="detail_main_ingredient_left_padding">25dp</dimen>
+    <dimen name="detail_main_ingredient_right_padding">23dp</dimen>
+    <dimen name="detail_ingredient_height">22dp</dimen>
+    <dimen name="detail_ingredient_max_width">132dp</dimen>
+    <dimen name="detail_ingredient_top_margin">8dp</dimen>
+    <dimen name="detail_tag_item_margin_top">5dp</dimen>
+    <dimen name="detail_tag_item_margin_bottom">5dp</dimen>
+    <dimen name="detail_tag_item_margin_left">8dp</dimen>
+    <dimen name="detail_dots_cover_height">11dp</dimen>
+    <dimen name="detail_dots_cover_top_margin">14dp</dimen>
+    <dimen name="detail_dots_cover_left_margin">11dp</dimen>
+    <dimen name="detail_dots_left_margin">10dp</dimen>
+    <dimen name="detail_dots_cover_width">21dp</dimen>
+    <dimen name="detail_dots_size">11dp</dimen>
+
+    <dimen name="detail_step_stopwatch_window_size">74dp</dimen>
+    <dimen name="detail_step_icon_cover_size">77dp</dimen>
+    <dimen name="detail_step_icon_size">36dp</dimen>
+    <dimen name="detail_step_icon_bottom_margin">13dp</dimen>
+
+    <dimen name="detail_step_stopwatch_window_top_margin">15dp</dimen>
+    <dimen name="detail_step_stopwatch_window_bottom_margin">11dp</dimen>
+    <dimen name="detail_step_stopwatch_window_left_right_margin">21dp</dimen>
+
+    <!-- Write -->
+    <dimen name="write_tab_height">48dp</dimen>
+    <dimen name="write_tab_left_right_margin">20dp</dimen>
+    <dimen name="write_tab_strip_height">6dp</dimen>
+    <dimen name="write_tag_height">57dp</dimen>
+    <dimen name="write_page_inform_recipe_title_margin_top">34dp</dimen>
+    <dimen name="write_page_inform_recipe_title_margin_bottom">17dp</dimen>
+    <dimen name="write_page_inform_recipe_title_padding_left">16dp</dimen>
+    <dimen name="write_page_inform_recipe_title_padding_top">15dp</dimen>
+    <dimen name="write_page_inform_recipe_title_padding_bottom">13dp</dimen>
+    <dimen name="write_page_inform_right_left_margin">12dp</dimen>
+    <dimen name="write_page_ingredient_cover_height">57dp</dimen>
+    <dimen name="write_page_ingredient_cover_padding_left">23dp</dimen>
+    <dimen name="write_page_ingredient_cover_add_size">34dp</dimen>
+    <dimen name="write_page_ingredient_cover_add_margin_right">10dp</dimen>
+    <dimen name="write_page_ingredient_item_height">55dp</dimen>
+    <dimen name="write_page_ingredient_tutorial_cover_height">199dp</dimen>
+    <dimen name="write_page_ingredient_tutorial_cover_width">322dp</dimen>
+    <dimen name="write_page_ingredient_tutorial_item_height">133dp</dimen>
+    <dimen name="write_page_ingredient_tutorial_item_width">239dp</dimen>
+    <dimen name="write_page_ingredient_tutorial_margin_top">24dp</dimen>
+    <dimen name="write_page_description_item_height">110dp</dimen>
+    <dimen name="write_page_description_image_cover_size">108dp</dimen>
+    <dimen name="write_page_description_image_size">82dp</dimen>
+    <dimen name="write_page_description_option_height">75dp</dimen>
+    <dimen name="write_page_description_option_icon_height">39dp</dimen>
+    <dimen name="write_page_description_option_icon_width">125dp</dimen>
+    <dimen name="write_page_description_option_icon_margin">15dp</dimen>
+    <dimen name="write_page_description_option_edit_text_padding_top">17dp</dimen>
+    <dimen name="write_page_description_option_edit_text_padding_left">19dp</dimen>
+    <dimen name="write_dialog_height">241dp</dimen>
+    <dimen name="write_dialog_description_icon_cover_height">142dp</dimen>
+    <dimen name="write_dialog_description_icon_size">60dp</dimen>
+    <dimen name="write_dialog_description_icon_album_width">70dp</dimen>
+    <dimen name="write_dialog_description_icon_top_bottom_margin">12dp</dimen>
+    <dimen name="write_dialog_description_icon_left_right_margin">5dp</dimen>
+    <dimen name="write_dialog_description_alert_top_bottom_margin">20dp</dimen>
+    <dimen name="write_album_folder_item_height">64dp</dimen>
+    <dimen name="write_album_folder_item_all_top_bottom_margin">8dp</dimen>
+    <dimen name="write_album_folder_item_left_right_margin">8dp</dimen>
+    <dimen name="write_album_folder_item_top_bottom_margin">2dp</dimen>
+    <dimen name="write_album_folder_item_name_margin_left">18dp</dimen>
+    <dimen name="write_image_complete_bottom_margin">15dp</dimen>
+    <dimen name="write_image_complete_left_right_margin">10dp</dimen>
+    <dimen name="write_image_complete_top_bottom_padding">12dp</dimen>
+    <dimen name="write_image_item_size">120dp</dimen>
+    <dimen name="write_image_item_count_cover_size">61dp</dimen>
+    <dimen name="write_image_item_count_size">36dp</dimen>
+    <dimen name="write_camera_taken_list_height">129dp</dimen>
+    <dimen name="write_camera_take_height">69dp</dimen>
+    <dimen name="write_camera_flash_icon_size">55dp</dimen>
+    <dimen name="write_camera_flash_left_right_margin">15dp</dimen>
+    <dimen name="write_camera_flash_bottom_margin">13dp</dimen>
+    <dimen name="write_camera_button_width">61dp</dimen>
+    <dimen name="write_camera_button_height">51dp</dimen>
+    <dimen name="write_camera_item_cover_width">114dp</dimen>
+    <dimen name="write_camera_item_cover_height">116dp</dimen>
+    <dimen name="write_camera_item_image_size">108dp</dimen>
+    <dimen name="write_camera_item_remove_size">34dp</dimen>
+    <dimen name="write_camera_item_left_right_margin">11dp</dimen>
+
+
+    <!-- Setting -->
+    <dimen name="setting_index_height">44dp</dimen>
+    <dimen name="setting_index_left_padding">23dp</dimen>
+    <dimen name="setting_menu_item_height">54dp</dimen>
+    <dimen name="setting_menu_left_padding">43dp</dimen>
+    <dimen name="setting_menu_right_margin">16dp</dimen>
+    <dimen name="setting_menu_arrow_size">20dp</dimen>
+
+
+</resources>
+

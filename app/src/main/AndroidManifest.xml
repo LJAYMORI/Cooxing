@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ljaymori.cooxing" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- GCM위한 퍼미션 -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.ljaymori.cooxing.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.ljaymori.cooxing.permission.C2D_MESSAGE" />
+    <!-- GCM위한 퍼미션 끝 -->
+
+
+    <application
+        android:name=".common.CooxingApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".splash.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingNoActionBarTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- Signup Activity -->
+        <activity
+            android:name=".signup.SignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- Clause Signup Activity -->
+        <activity
+            android:name=".signup.ClauseSignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- Tutorial Activity -->
+        <activity
+            android:name=".tutorial.TutorialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingNoActionBarTheme" />
+
+        <!-- Interest Activity -->
+        <activity
+            android:name=".interest.InterestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingNoActionBarTheme" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingNoActionBarTheme" />
+
+        <!-- Setting Activity -->
+        <activity
+            android:name=".setting.SettingActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- Search Activity -->
+        <activity
+            android:name=".search.SearchActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/cooxingActionBarTheme" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="cooxing" android:host="search"/>
+            </intent-filter>
+
+        </activity>
+
+        <!-- Profile Activity -->
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- User List Activity -->
+        <activity
+            android:name=".userlist.UserListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- Reply Activity -->
+        <activity
+            android:name=".reply.ReplyActivity"
+            android:label="@string/reply_actionbar_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Write Activity -->
+        <activity
+            android:name=".write.WriteActivity"
+            android:label="@string/write_actionbar_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarThemeRemoveShadow"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- Write Camera Activity -->
+        <activity
+            android:name=".write.camera.WriteCameraActivity"
+            android:label="@string/title_activity_write_camera"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- Write Album Folder Activity -->
+        <activity
+            android:name=".write.album.WriteAlbumFolderActivity"
+            android:label="@string/title_activity_write_album"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- Write Image Activity -->
+        <activity
+            android:name=".write.image.WriteImageActivity"
+            android:label="@string/title_activity_write_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- Detail Activity -->
+        <activity
+            android:name=".detail.DetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/cooxingActionBarTheme" />
+
+        <!-- GCM -->
+        <receiver
+            android:name=".gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.ljaymori.cooxing" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".gcm.GcmIntentService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- GCM 끝 -->
+
+    </application>
+
+</manifest>
